@@ -11,5 +11,5 @@ sphinx:
 python:
     version: 3.7
               
-conda:
-    environment: environment.yml
+#conda:
+#    environment: environment.yml

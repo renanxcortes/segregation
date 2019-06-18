@@ -276,3 +276,16 @@ def setup(app):
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/3.6/': None}
+
+
+
+import sys
+from unittest.mock import MagicMock
+
+class Mock(MagicMock):
+    @classmethod
+    def __getattr__(cls, name):
+        return MagicMock()
+
+MOCK_MODULES = ['rtree']
+sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
