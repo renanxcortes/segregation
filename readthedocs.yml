@@ -9,6 +9,7 @@ sphinx:
 # formats: all
 
 python:
+    use_system_site_packages: true
     version: 3.7
     install:
         - requirements: requirements.txt
