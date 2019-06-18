@@ -1,7 +1,8 @@
-name: segregation
+name: docs
 channels:
   - defaults
   - conda-forge
+  - conda
   - udst
 dependencies:
   - pandas
