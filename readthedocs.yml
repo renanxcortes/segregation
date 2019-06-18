@@ -17,5 +17,5 @@ python:
           extra_requirements:
               - dev
               
-brew:
+conda:
     environment: environment.yml
