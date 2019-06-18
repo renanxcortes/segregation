@@ -9,7 +9,6 @@ sphinx:
 # formats: all
 
 python:
-    pip_install: true
     version: 3.7
     install:
         - requirements: requirements.txt
