@@ -15,7 +15,7 @@ python:
     version: 3.7
     install:
         - requirements: requirements_docs.txt
-        - method: pip
+        - method: conda
           path: .
 #          extra_requirements:
 #              - tests
