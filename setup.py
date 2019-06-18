@@ -34,9 +34,7 @@ def setup_package():
     # get all file endings and copy whole file names without a file suffix
     # assumes nested directories are only down one level
     _groups_files = {
-        'base': 'requirements.txt',
-        'tests': 'requirements_tests.txt',
-        'docs': 'requirements_docs.txt'
+        'base': 'requirements.txt'
     }
 
     reqs = _get_requirements_from_files(_groups_files)
