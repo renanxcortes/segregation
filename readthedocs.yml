@@ -12,7 +12,10 @@ python:
     version: 3.7
     install:
         - requirements: requirements.txt
-        - method: brew
+        - method: pip
           path: .
           extra_requirements:
               - dev
+              
+brew:
+    environment: environment.yml
