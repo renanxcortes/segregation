@@ -12,7 +12,7 @@ python:
     version: 3.6
     install:
         - requirements: requirements_docs.txt
-        - method: pip
+        - method: pip --ignore-installed
           path: .
           extra_requirements:
               - tests
