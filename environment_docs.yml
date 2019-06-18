@@ -5,3 +5,15 @@ channels:
   - udst
 dependencies:
   - pandas
+  - geopandas
+  - matplotlib
+  - scikit-learn
+  - seaborn
+  - numpy
+  - scipy
+  - urbanaccess
+  - pandana
+  - osmnx
+  - pip
+  - pip:
+    - git+git://github.com/pysal/libpysal.git
