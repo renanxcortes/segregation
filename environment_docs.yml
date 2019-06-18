@@ -1,0 +1,7 @@
+name: segregation
+channels:
+  - defaults
+  - conda-forge
+  - udst
+dependencies:
+  - pandas

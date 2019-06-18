@@ -11,11 +11,11 @@ formats: all
 python:
     version: 3.6
     install:
-        - requirements: requirements.txt
+        - requirements: requirements_docs.txt
         - method: pip
           path: .
           extra_requirements:
               - tests
               - docs
 conda:
-    environment: environment.yml
+    environment: environment_docs.yml
