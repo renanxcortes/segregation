@@ -17,6 +17,3 @@ python:
           extra_requirements:
               - tests
               - docs
-              
-conda:
-    environment: environment.yml
