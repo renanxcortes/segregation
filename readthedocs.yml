@@ -12,10 +12,10 @@ conda:
   environment: environment_docs.yml
 
 python:
-    version: 3.7
+    version: 3.6
     install:
         - requirements: requirements_docs.txt
-        - method: conda
+        - method: pip
           path: .
 #          extra_requirements:
 #              - tests
