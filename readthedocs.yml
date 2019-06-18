@@ -13,7 +13,6 @@ python:
     install:
         - requirements: requirements.txt
         - method: pip
-        - ignore-installed: true
           path: .
           extra_requirements:
               - tests
