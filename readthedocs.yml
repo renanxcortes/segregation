@@ -11,11 +11,10 @@ formats: all
 python:
     version: 3.6
     install:
-        - requirements: requirements_docs.txt
-        - method: pip --ignore-installed
+        - requirements: requirements.txt
+        - method: pip
           path: .
           extra_requirements:
-              - tests
               - docs
 conda:
     environment: environment_docs.yml
