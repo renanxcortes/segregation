@@ -13,11 +13,10 @@ python:
     install:
         - requirements: requirements.txt
         - method: pip
-          ignore-installed: true
           path: .
           extra_requirements:
               - tests
               - docs
-
+        - ignore-installed: true
 conda:
     environment: environment.yml
