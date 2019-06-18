@@ -19,4 +19,4 @@ python:
               - docs
 
 conda:
-environment: environment.yml
+    environment: environment.yml
