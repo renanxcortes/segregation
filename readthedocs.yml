@@ -9,14 +9,14 @@ sphinx:
 formats: all
 
 conda:
-  environment: environment.yml
+  environment: environment_docs.yml
 
 python:
     version: 3.7
     install:
-        - requirements: requirements.txt
+        - requirements: requirements_docs.txt
         - method: pip
           path: .
-          extra_requirements:
-              - tests
-              - docs
+#          extra_requirements:
+#              - tests
+#              - docs
