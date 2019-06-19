@@ -19,6 +19,17 @@
 import sys, os
 import sphinx_bootstrap_theme
 
+import sys
+from unittest.mock import MagicMock
+
+class Mock(MagicMock):
+    @classmethod
+    def __getattr__(cls, name):
+        return MagicMock()
+
+MOCK_MODULES = ['libspatialindex_c']
+sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
+
 
 sys.path.insert(0, os.path.abspath('../../'))
 
@@ -279,13 +290,4 @@ intersphinx_mapping = {'https://docs.python.org/3.6/': None}
 
 
 
-import sys
-from unittest.mock import MagicMock
 
-class Mock(MagicMock):
-    @classmethod
-    def __getattr__(cls, name):
-        return MagicMock()
-
-MOCK_MODULES = ['libspatialindex_c']
-sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
