@@ -18,5 +18,5 @@ python:
               - tests
               - docs
               
-#conda:
-#    environment: environment.yml
+conda:
+    environment: environment.yml
