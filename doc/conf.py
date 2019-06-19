@@ -19,16 +19,16 @@
 import sys, os
 import sphinx_bootstrap_theme
 
-import sys
-from unittest.mock import MagicMock
+#import sys
+#from unittest.mock import MagicMock
 
-class Mock(MagicMock):
-    @classmethod
-    def __getattr__(cls, name):
-        return MagicMock()
+#class Mock(MagicMock):
+#    @classmethod
+#    def __getattr__(cls, name):
+#        return MagicMock()
 
-MOCK_MODULES = ['rtree', 'sphinxcontrib.bibtex' 'numpydoc']
-sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
+#MOCK_MODULES = ['rtree', 'sphinxcontrib.bibtex' 'numpydoc']
+#sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 
 
 sys.path.insert(0, os.path.abspath('../../'))
