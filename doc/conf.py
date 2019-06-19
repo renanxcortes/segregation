@@ -27,7 +27,7 @@ class Mock(MagicMock):
     def __getattr__(cls, name):
         return MagicMock()
 
-MOCK_MODULES = ['libspatialindex_c']
+MOCK_MODULES = ['rtree']
 sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 
 
