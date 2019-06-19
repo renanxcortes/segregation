@@ -27,7 +27,7 @@ class Mock(MagicMock):
     def __getattr__(cls, name):
         return MagicMock()
 
-MOCK_MODULES = ['rtree']
+MOCK_MODULES = ['rtree', 'sphinxcontrib.bibtex']
 sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 
 
