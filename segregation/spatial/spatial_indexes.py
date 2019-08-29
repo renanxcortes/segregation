@@ -368,6 +368,7 @@ class SpatialProxProf:
         self.curve = aux[2]
         self.core_data = aux[3]
         self._function = _spatial_prox_profile
+        self._dimension = "Clustering"
 
     def plot(self):
         """
@@ -594,6 +595,7 @@ class SpatialDissim:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _spatial_dissim
+        self._dimension = "Evenness"
 
 
 def _boundary_spatial_dissim(data,
@@ -772,6 +774,7 @@ class BoundarySpatialDissim:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _boundary_spatial_dissim
+        self._dimension = "Evenness"
 
 
 def _perimeter_area_ratio_spatial_dissim(data,
@@ -961,6 +964,7 @@ class PerimeterAreaRatioSpatialDissim:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _perimeter_area_ratio_spatial_dissim
+        self._dimension = "Evenness"
         
 
 
@@ -1291,6 +1295,7 @@ class DistanceDecayIsolation:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _distance_decay_isolation
+        self._dimension = "Isolation/Exposure"
 
 
 def _distance_decay_exposure(data,
@@ -1524,6 +1529,7 @@ class DistanceDecayExposure:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _distance_decay_exposure
+        self._dimension = "Isolation/Exposure"
 
 
 def _spatial_proximity(data,
@@ -1752,6 +1758,7 @@ class SpatialProximity:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _spatial_proximity
+        self._dimension = "Clustering"
 
 
 def _absolute_clustering(data,
@@ -1971,6 +1978,7 @@ class AbsoluteClustering:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _absolute_clustering
+        self._dimension = "Clustering"
 
 
 def _relative_clustering(data,
@@ -2198,6 +2206,7 @@ class RelativeClustering:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _relative_clustering
+        self._dimension = "Clustering"
 
 
 def _delta(data, group_pop_var, total_pop_var):
@@ -2357,6 +2366,7 @@ class Delta:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _delta
+        self._dimension = "Concentration"
 
 
 def _absolute_concentration(data, group_pop_var, total_pop_var):
@@ -2530,6 +2540,7 @@ class AbsoluteConcentration:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _absolute_concentration
+        self._dimension = "Concentration"
 
 
 def _relative_concentration(data, group_pop_var, total_pop_var):
@@ -2706,6 +2717,7 @@ class RelativeConcentration:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _relative_concentration
+        self._dimension = "Concentration"
 
 
 def _absolute_centralization(data,
@@ -2987,6 +2999,7 @@ class AbsoluteCentralization:
         self.core_data = aux[1]
         self.center_values = aux[2]
         self._function = _absolute_centralization
+        self._dimension = "Centralization"
 
 
 def _relative_centralization(data,
@@ -3273,6 +3286,7 @@ class RelativeCentralization:
         self.core_data = aux[1]
         self.center_values = aux[2]
         self._function = _relative_centralization
+        self._dimension = "Centralization"
 
 
 class SpatialInformationTheory(MultiInformationTheory):

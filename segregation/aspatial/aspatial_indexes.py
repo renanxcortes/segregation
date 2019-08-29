@@ -169,6 +169,7 @@ class MinMax:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _min_max
+        self._dimension = "Evenness"
 
 
 
@@ -313,6 +314,7 @@ class Dissim:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _dissim
+        self._dimension = "Evenness"
         
         
         
@@ -448,6 +450,7 @@ class GiniSeg:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _gini_seg
+        self._dimension = "Evenness"
         
         
         
@@ -590,6 +593,7 @@ class Entropy:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _entropy
+        self._dimension = "Evenness"
         
         
         
@@ -732,6 +736,7 @@ class Isolation:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _isolation
+        self._dimension = "Isolation/Exposure"
         
         
         
@@ -875,6 +880,7 @@ class Exposure:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _exposure
+        self._dimension = "Isolation/Exposure"
 
 
 
@@ -1028,6 +1034,7 @@ class Atkinson:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _atkinson
+        self._dimension = "Evenness"
         
         
         
@@ -1170,6 +1177,7 @@ class CorrelationR:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _correlationr
+        self._dimension = "Isolation/Exposure"
         
         
 def _conprof(data, group_pop_var, total_pop_var, m = 1000):
@@ -1332,6 +1340,7 @@ class ConProf:
         self.curve     = aux[2]
         self.core_data = aux[3]
         self._function = _conprof
+        self._dimension = "Evenness"
 
     def plot(self):
         """
@@ -1503,6 +1512,7 @@ class ModifiedDissim:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _modified_dissim
+        self._dimension = "Evenness"
         
         
 def _modified_gini_seg(data, group_pop_var, total_pop_var, iterations = 500):
@@ -1661,6 +1671,7 @@ class ModifiedGiniSeg:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _modified_gini_seg
+        self._dimension = "Evenness"
         
         
         
@@ -1824,6 +1835,7 @@ class BiasCorrectedDissim:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _bias_corrected_dissim
+        self._dimension = "Evenness"
         
         
 def _density_corrected_dissim(data, group_pop_var, total_pop_var, xtol = 1e-5):
@@ -1992,6 +2004,7 @@ class DensityCorrectedDissim:
         self.statistic = aux[0]
         self.core_data = aux[1]
         self._function = _density_corrected_dissim
+        self._dimension = "Evenness"
         
 
 
